@@ -79,7 +79,7 @@ const PrivateAndGroupDining = ({}) => {
       id="dining"
     >
       <div
-        className="relative flex h-full w-full flex-col-reverse items-center justify-center gap-4 rounded-3xl md:flex-row"
+        className="relative flex h-full w-full flex-col-reverse items-center justify-center gap-4 rounded-3xl md:flex-row md:rounded-none"
         style={{
           backgroundImage: `url('/images/home/private_group.jpg')`,
           backgroundSize: "cover",
@@ -88,14 +88,14 @@ const PrivateAndGroupDining = ({}) => {
       >
         <div className="absolute left-0 top-0 z-10 h-full w-full bg-black/20"></div>
         <div className="z-20 flex h-full w-full flex-col items-start justify-center gap-[2.5rem] p-6 lg:px-32">
-          <h3 className="dining-title -ml-[50px] font-oswald uppercase">
+          <h3 className="dining-title -ml-[50px] font-inter text-sm font-[600] uppercase tracking-[1.76px] text-[#FBEAD2]">
             Booking
           </h3>
-          <h1 className="dining-head max-w-[500px] font-oswald text-6xl font-bold sm:text-7xl md:text-start">
+          <h1 className="dining-head max-w-[500px] font-montserrat text-6xl font-bold italic tracking-[-1.08px] text-[#FFF] sm:text-7xl md:text-start">
             Private &<br />
             Group Dining
           </h1>
-          <p className="dining-description mt-[10px] hidden max-w-[500px] font-light leading-[160%] text-white md:flex md:text-start">
+          <p className="dining-description mt-[10px] hidden max-w-[500px] font-roboto text-sm font-[400] leading-[160%] tracking-[0.56px] text-[#FBEAD2] md:flex md:text-start">
             Our private and group dining options offer an intimate setting for
             any occasion, from celebrations to business gatherings. Each space
             is designed to provide privacy and comfort, allowing you to enjoy
@@ -104,8 +104,8 @@ const PrivateAndGroupDining = ({}) => {
             for groups of all sizes.
           </p>
           <Link href="/table-booking">
-            <Button className="dining-button mt-[10px] flex items-center justify-center gap-3 rounded-none bg-white px-6 py-7 font-oswald font-extrabold text-black">
-              Book Now <MoveRight className="text-primary" />
+            <Button className="dining-button mt-[10px] flex items-center justify-center gap-3 rounded-none bg-[#CCAD64] px-6 py-7 font-inter font-[600] uppercase leading-[1.56px] text-[#282828]">
+              Book Now <MoveRight className="text-[#282828]" />
             </Button>
           </Link>
         </div>

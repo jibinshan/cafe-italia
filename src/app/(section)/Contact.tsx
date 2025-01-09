@@ -62,51 +62,50 @@ const Contact = ({}) => {
       className="flex min-h-[90vh] w-full items-center justify-center px-3 py-12 md:px-0 md:py-24"
     >
       <div className="flex h-full w-full max-w-[1300px] flex-col items-center gap-8">
-        <div className="flex w-full flex-col">
-          <p className="w-full text-center font-[400] uppercase tracking-[1.76px] text-[#FBEAD2]">
+        <div className="flex w-full flex-col gap-4">
+          <p className="w-full text-center font-inter text-sm font-[600] uppercase tracking-[1.76px] text-[#FBEAD2]">
             Connect with us
           </p>
-          <p className="contact-head w-full text-center font-oswald text-5xl font-[700] text-[#FFF4E3] md:text-6xl">
+          <p className="contact-head w-full text-center font-montserrat text-5xl font-[700] italic tracking-[1.8px] text-[#FFF4E3] md:text-6xl">
             Contact Us
           </p>
         </div>
-        <div className="contact-container mt-[30px] flex w-full flex-col gap-5 md:flex-row">
-          <div className="flex w-full flex-col items-center justify-center gap-3 rounded-lg border-[1px] border-[#202121] bg-[#0b0c0c] py-12 md:w-1/3">
-            <p className="w-full text-center uppercase text-[#FBEAD2]">
+        <div className="contact-container mt-[30px] flex w-full flex-col justify-center gap-5 md:mt-20 md:flex-row">
+          <div className="flex h-[200px] w-full flex-col items-center justify-center gap-3 rounded-lg border-[1px] border-[#202121] bg-[#0b0c0c] py-2 md:w-[350px] md:rounded-none">
+            <p className="w-full text-center font-inter text-sm font-[600] uppercase tracking-[1.76px] text-[#FBEAD2]">
               Booking request
             </p>
             <Link
               href="tel:0161 795 5502"
-              className="w-full text-center text-4xl text-[#CCAD64]"
+              className="w-full text-center font-inter text-2xl font-[400] text-[#CCAD64]"
             >
               0161 795 5502
             </Link>
           </div>
-          <div className="flex w-full flex-col items-center justify-center gap-3 rounded-lg border-[1px] border-[#202121] bg-[#0b0c0c] py-12 md:w-1/3">
-            <p className="w-full text-center uppercase text-[#FBEAD2]">
+          <div className="flex h-[200px] w-full flex-col items-center justify-center gap-3 rounded-lg border-[1px] border-[#202121] bg-[#0b0c0c] py-2 md:w-[350px] md:rounded-none">
+            <p className="w-full text-center font-inter text-sm font-[600] uppercase tracking-[1.76px] text-[#FBEAD2]">
               Location
             </p>
             <Link
               href="https://maps.app.goo.gl/ZJMh1FpKoYa66F359"
               target="_blank"
-              className="w-full text-center text-[#848484]"
+              className="w-full text-center font-inter text-lg font-[400] text-[#848484]"
             >
-              37 Main Road, Windermere
+              2 Bury Old Road,
               <br />
-              LA23 1DX England
+              Manchester, M8 9JN
             </Link>
           </div>
-          <div className="flex w-full flex-col items-center justify-center gap-3 rounded-lg border-[1px] border-[#202121] bg-[#0b0c0c] py-12 md:w-1/3">
-            <p className="w-full text-center uppercase text-[#FBEAD2]">
+          <div className="flex h-[200px] w-full flex-col items-center justify-center gap-3 rounded-lg border-[1px] border-[#202121] bg-[#0b0c0c] py-2 md:w-[350px] md:rounded-none">
+            <p className="w-full text-center font-inter text-sm font-[600] uppercase tracking-[1.76px] text-[#FBEAD2]">
               Opening Hours
             </p>
-            <p className="w-full text-center text-[#848484]">
+            <p className="w-full text-center font-inter text-lg font-[400] text-[#848484]">
               Monday to Saturday
               <br />
-              11:00AM - 23:30PM
+              11:00am - 11:30pm
               <br />
-              Sunday
-              <br /> 12:00PM - 23:00PM
+              Sunday 12:00pm - 11:00pm
             </p>
           </div>
         </div>

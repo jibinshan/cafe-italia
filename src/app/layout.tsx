@@ -19,6 +19,18 @@ const manrope = Oswald({
   weight: ["200", "300", "400", "500", "600", "700"],
 });
 
+const montserrat = Oswald({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+  weight: ["200", "300", "400", "500", "600", "700"],
+});
+
+const inter = Oswald({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  weight: ["200", "300", "400", "500", "600", "700"],
+});
+
 const roboto = Roboto({
   subsets: ["latin"],
   variable: "--font-roboto",
@@ -42,6 +54,8 @@ export default function RootLayout({
           manrope.variable,
           roboto.variable,
           playfair.variable,
+          inter.variable,
+          montserrat.variable,
         )}
       >
         <Providers>{children}</Providers>

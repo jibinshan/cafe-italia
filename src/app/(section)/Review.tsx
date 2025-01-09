@@ -9,42 +9,42 @@ import {
 } from "@/components/ui/carousel";
 import { useRestaurant } from "@/context/RestaurantContext";
 import Image from "next/image";
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import SplitType from 'split-type';
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import SplitType from "split-type";
 import { useEffect } from "react";
 
-const Reviews = ({ }) => {
+const Reviews = ({}) => {
   const { reviews } = useRestaurant();
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger)
+    gsap.registerPlugin(ScrollTrigger);
 
-    const splitType = document.querySelectorAll(".review-head")
+    const splitType = document.querySelectorAll(".review-head");
     splitType.forEach((char, i) => {
       if (char instanceof HTMLElement) {
-        const text = new SplitType(char, { types: "chars" })
+        const text = new SplitType(char, { types: "chars" });
         gsap.from(text.chars, {
           scrollTrigger: {
             trigger: char,
-            start: 'top 80%',
-            end: 'top 20%',
+            start: "top 80%",
+            end: "top 20%",
             scrub: true,
-            markers: false
+            markers: false,
           },
           opacity: 0.2,
-          stagger: 0.2
-        })
+          stagger: 0.2,
+        });
       }
-    })
+    });
 
-    gsap.to('.review-underline', {
+    gsap.to(".review-underline", {
       scrollTrigger: {
         trigger: ".review-underline",
-        toggleActions: "restart none none none"
+        toggleActions: "restart none none none",
       },
       scale: 1,
-      duration: 1.5
-    })
+      duration: 1.5,
+    });
 
     // const lenis = new Lenis();
 
@@ -61,28 +61,18 @@ const Reviews = ({ }) => {
     // return () => {
     //   lenis.destroy(); // Cleanup Lenis instance to avoid memory leaks
     // };
-  }, [])
+  }, []);
   return (
     <section className="relative flex h-full w-full justify-center bg-transparent">
       <div className="flex h-full w-full max-w-[1300px] flex-col items-start justify-center gap-4 py-12 md:py-44">
         <div className="flex h-full w-full flex-col items-start justify-center gap-2 lg:gap-4">
-          <h3 className="w-full text-center font-oswald uppercase text-[#fbead2]">
+          <h3 className="w-full text-center font-inter text-sm font-[600] uppercase tracking-[1.67px] text-[#fbead2]">
             Reviews
           </h3>
-          <div className="w-full flex flex-col items-center justify-center gap-4">
-            <h1 className="review-head w-full text-center font-oswald text-5xl font-bold text-[#ffffff]">
+          <div className="flex w-full flex-col items-center justify-center gap-4">
+            <h1 className="review-head w-full text-center font-montserrat text-5xl font-[700] italic tracking-[1.8px] text-[#FFF4E3]">
               Hear Our Guests
             </h1>
-            <Image
-              src='/images/underline.png'
-              width={840}
-              height={85}
-              alt="underline"
-              className="review-underline w-60"
-              style={{
-                transform: "scale(0.5)"
-              }}
-            />
           </div>
         </div>
         <div className="flex w-full items-center justify-center p-4">
@@ -92,7 +82,7 @@ const Reviews = ({ }) => {
                 {reviews.map((review, index) => (
                   <CarouselItem
                     key={index}
-                    className="flex w-full basis-full flex-col gap-6 rounded-2xl border border-[#0b0b0b] bg-[#0b0b0b] px-6 py-8 md:basis-1/3"
+                    className="flex w-full basis-full flex-col gap-6 rounded-2xl border border-[#0b0b0b] bg-[#0b0b0b] px-6 py-8 md:basis-1/3 md:rounded-none"
                   >
                     <div className="flex w-full items-center gap-2">
                       <Image
@@ -105,8 +95,10 @@ const Reviews = ({ }) => {
                         alt={review.author_name}
                       />
                       <div className="flex flex-col gap-2">
-                        <p className="text-[#FBEAD2]">{review.author_name}</p>
-                        <span className="text-[#9C9995]">
+                        <p className="font-manrope text-sm font-[500] tracking-[0.54px] text-[#DEDEDE]">
+                          {review.author_name}
+                        </p>
+                        <span className="font-manrope text-sm font-[400] tracking-[0.48px] text-[#9C9995]">
                           {review.relative_time_description}
                         </span>
                       </div>
@@ -117,7 +109,9 @@ const Reviews = ({ }) => {
                       ))}
                     </div>
                     <div className="">
-                      <p className="text-[#FBEAD2]">{review.text}</p>
+                      <p className="font-roboto font-[300] tracking-[0.48px] text-[#DEDEDE]">
+                        {review.text}
+                      </p>
                     </div>
                   </CarouselItem>
                 ))}
@@ -130,7 +124,7 @@ const Reviews = ({ }) => {
           )}
         </div>
       </div>
-    </section >
+    </section>
   );
 };
 
