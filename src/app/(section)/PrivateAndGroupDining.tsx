@@ -81,7 +81,7 @@ const PrivateAndGroupDining = ({}) => {
       <div
         className="relative flex h-full w-full flex-col-reverse items-center justify-center gap-4 rounded-3xl md:flex-row md:rounded-none"
         style={{
-          backgroundImage: `url('/images/home/private_group.jpg')`,
+          backgroundImage: `url('/images/home/dining.png')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

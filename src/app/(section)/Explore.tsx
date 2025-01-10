@@ -24,10 +24,10 @@ const Explore: React.FC = () => {
               alt="fb"
               width={444}
               height={598}
-              className="h-[360px] w-[270px] rounded-3xl object-cover md:rounded-none"
+              className="h-[360px] w-[270px] rounded-3xl object-cover md:h-[440px] md:w-[390px] md:rounded-none"
             />
 
-            <div className="absolute bottom-2 left-20 z-20 flex flex-col gap-4 text-center">
+            <div className="absolute bottom-2 left-16 z-20 flex flex-col gap-4 text-center md:left-32">
               <h1 className="font-montserrat text-xl font-[700] text-[#FBEAD2]">
                 Italian dishes
               </h1>
@@ -43,10 +43,10 @@ const Explore: React.FC = () => {
               alt="fb"
               width={444}
               height={598}
-              className="h-[360px] w-[270px] rounded-3xl object-cover md:rounded-none"
+              className="h-[360px] w-[270px] rounded-3xl object-cover md:h-[440px] md:w-[390px] md:rounded-none"
             />
 
-            <div className="absolute bottom-2 left-20 z-20 flex flex-col gap-4 text-center">
+            <div className="absolute bottom-2 left-16 z-20 flex flex-col gap-4 text-center md:left-32">
               <h1 className="font-montserrat text-xl font-[700] text-[#FBEAD2]">
                 Italian dishes
               </h1>
@@ -62,10 +62,10 @@ const Explore: React.FC = () => {
               alt="fb"
               width={444}
               height={598}
-              className="h-[360px] w-[270px] rounded-3xl object-cover md:rounded-none"
+              className="h-[360px] w-[270px] rounded-3xl object-cover md:h-[440px] md:w-[390px] md:rounded-none"
             />
 
-            <div className="absolute bottom-2 left-20 z-20 flex flex-col gap-4 text-center">
+            <div className="absolute bottom-2 left-16 z-20 flex flex-col gap-4 text-center md:left-32">
               <h1 className="font-montserrat text-xl font-[700] text-[#FBEAD2]">
                 Italian dishes
               </h1>

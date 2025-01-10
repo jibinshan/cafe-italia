@@ -22,10 +22,10 @@ const HeaderTop: React.FC = () => {
     };
   }, []);
   return (
-    <section className="flex h-[0px] w-full items-center justify-center px-4 md:h-[52px] md:px-16">
+    <section className="flex h-[0px] w-full items-center justify-center px-4 md:h-[42px] md:px-16">
       <div
         className={cn(
-          "mb-2 flex w-full flex-row justify-between md:py-2",
+          "flex w-full flex-row items-center justify-between md:py-2",
           (isScrolled || pathname !== "/") && "hidden",
         )}
       >
@@ -33,32 +33,32 @@ const HeaderTop: React.FC = () => {
           <Link
             href="https://maps.app.goo.gl/ZJMh1FpKoYa66F359"
             target="_blank"
-            className="flex items-center gap-2 font-roboto text-xs font-[400] tracking-[0.48px] text-white"
+            className="flex items-center gap-2 font-roboto text-xs font-[400] tracking-[0.48px] text-[#DDD]"
           >
-            <MapPin className="h-5 w-5 text-primary" />
-            37 Main Road, Windermere LA23 1DX England
+            <MapPin className="h-4 w-4 text-primary" />2 Bury Old Road,
+            Manchester, M8 9JN
           </Link>
-          <p className="flex items-center gap-2 font-roboto text-xs font-[400] tracking-[0.48px] text-white">
-            <Clock className="h-5 w-5 text-primary" />
-            Mon-Sat 11:00AM - 23:30PM, Sun 12:00PM - 23:00PM
+          <p className="flex items-center gap-2 font-roboto text-xs font-[400] tracking-[0.48px] text-[#DDD]">
+            <Clock className="h-4 w-4 text-primary" />
+            Mon-Sat 11am - 11:30pm, Sun 12pm - 11pm
           </p>
         </div>
         <div className="hidden flex-row items-center gap-2 md:flex md:gap-4">
           <Link
             href="tel:+441617955502"
             target="_blank"
-            className="flex items-center gap-2 font-roboto text-xs font-[400] tracking-[0.48px] text-white"
+            className="flex items-center gap-2 font-roboto text-xs font-[400] tracking-[0.48px] text-[#DDD]"
           >
-            <Phone className="h-5 w-5 text-primary" />
+            <Phone className="h-4 w-4 text-primary" />
             0161 795 5502
           </Link>
           <Link
-            href="mailto:cafeitalia@mail.com"
+            href="mailto:reservations@istanbulrestaurantmanchester.co.uk"
             target="_blank"
-            className="flex items-center gap-2 font-roboto text-xs font-[400] tracking-[0.48px] text-white"
+            className="flex items-center gap-2 font-roboto text-xs font-[400] tracking-[0.48px] text-[#DDD]"
           >
-            <Mail className="h-5 w-5 text-primary" />
-            Cafe Italia@mail.com
+            <Mail className="h-4 w-4 text-primary" />
+            reservations@istanbulrestaurantmanchester.co.uk
           </Link>
         </div>
       </div>

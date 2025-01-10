@@ -4,14 +4,14 @@ import Link from "next/link";
 
 const Follow: React.FC = () => {
   const images = [
-    "/images/home/menu/image1.png",
-    "/images/home/menu/image1.png",
-    "/images/home/menu/image1.png",
-    "/images/home/menu/image1.png",
-    "/images/home/menu/image1.png",
-    "/images/home/menu/image1.png",
-    "/images/home/menu/image1.png",
-    "/images/home/menu/image1.png",
+    "/images/home/follow/image1.png",
+    "/images/home/follow/image2.png",
+    "/images/home/follow/image3.png",
+    "/images/home/follow/image4.png",
+    "/images/home/follow/image5.png",
+    "/images/home/follow/image6.png",
+    "/images/home/follow/image7.png",
+    "/images/home/follow/image8.png",
   ];
 
   return (
@@ -33,11 +33,11 @@ const Follow: React.FC = () => {
               className="flex flex-row items-center justify-center gap-4"
             >
               <Image
-                src="/images/home/footer/insta.svg"
+                src="/images/home/follow/insta.svg"
                 alt="insta"
                 width={41}
                 height={42}
-                className="cursor-pointer"
+                className="cursor-pointer text-primary"
               />
               <span className="font-oswald text-xs font-[700] uppercase tracking-[1.98px] text-[#FBEAD2]">
                 Check out our instagram
@@ -51,7 +51,7 @@ const Follow: React.FC = () => {
               <img
                 src={src}
                 alt={`Image ${index + 1}`}
-                className="h-[280px] w-[280px] rounded-lg object-cover"
+                className="h-[280px] w-[280px] rounded-lg object-cover md:rounded-none"
               />
             </div>
           ))}

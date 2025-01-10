@@ -3,7 +3,14 @@ import "@/styles/ham.css";
 
 import { cn } from "@/lib/utils";
 import { type Metadata } from "next";
-import { Oswald, Roboto, Playfair_Display } from "next/font/google";
+import {
+  Oswald,
+  Roboto,
+  Playfair_Display,
+  Manrope,
+  Montserrat,
+  Inter,
+} from "next/font/google";
 import Providers from "@/app/Providers";
 
 export const metadata: Metadata = {
@@ -13,19 +20,19 @@ export const metadata: Metadata = {
   icons: [{ rel: "icon", url: "/images/logo.png" }],
 };
 
-const manrope = Oswald({
+const manrope = Manrope({
   subsets: ["latin"],
-  variable: "--font-oswald",
+  variable: "--font-manrope",
   weight: ["200", "300", "400", "500", "600", "700"],
 });
 
-const montserrat = Oswald({
+const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",
   weight: ["200", "300", "400", "500", "600", "700"],
 });
 
-const inter = Oswald({
+const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   weight: ["200", "300", "400", "500", "600", "700"],

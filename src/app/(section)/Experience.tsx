@@ -155,7 +155,7 @@ const Experience = ({}) => {
         <div className="experience-container relative -ml-[50px] w-full rounded-3xl">
           <div className="absolute left-0 top-0 z-10 h-full w-full bg-black/50"></div>
           <Image
-            src="/images/home/food2.jpeg"
+            src="/images/home/experience1.png"
             width={1600}
             height={1066}
             alt="side-close-up"
@@ -169,7 +169,7 @@ const Experience = ({}) => {
         <div className="experience-container relative -ml-[50px] w-full rounded-3xl">
           <div className="absolute left-0 top-0 z-10 h-full w-full bg-black/50"></div>
           <Image
-            src="/images/home/drinks2.jpeg"
+            src="/images/home/experience2.png"
             width={1600}
             height={1066}
             alt="side-close-up"
@@ -183,7 +183,7 @@ const Experience = ({}) => {
         <div className="experience-container relative -ml-[50px] w-full rounded-3xl">
           <div className="absolute left-0 top-0 z-10 h-full w-full bg-black/60"></div>
           <Image
-            src="/images/home/atmosphere2.jpg"
+            src="/images/home/experience3.png"
             width={3412}
             height={1934}
             alt="side-close-up"
