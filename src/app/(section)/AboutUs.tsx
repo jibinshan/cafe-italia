@@ -7,7 +7,7 @@ const AboutUs = ({ }) => {
     return (
         <section className="relative w-full flex flex-col h-full items-center justify-center rounded-t-3xl bg-[#3d3933] overflow-hidden">
             <div className="flex h-full flex-col items-center justify-center gap-4  md:flex-row py-20 max-w-[1300px]">
-                <div className="relative h-full w-full overflow-hidden p-4 md:w-1/2 md:p-0"
+                <div className="relative h-full w-full overflow-hidden p-4 md:w-1/2 md:p-0 "
                     style={{
                         backgroundImage: "url('/images/home/vector.png')",
                         backgroundSize: "contain",
