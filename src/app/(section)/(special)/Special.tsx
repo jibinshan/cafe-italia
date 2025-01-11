@@ -85,18 +85,13 @@ const Special = ({}) => {
   return (
     <section className="relative flex h-full w-full justify-center bg-[#070707]">
       <div className="flex h-full w-full max-w-[1300px] flex-col items-center justify-center gap-4 py-12">
-        <h3 className="special-title -ml-[50px] font-oswald uppercase italic">
-          Special
+        <h3 className="special-title -ml-[50px] font-inter text-sm font-[600] uppercase italic tracking-[1.76px] text-[#FBEAD2]">
+          Our Menu
         </h3>
-        <h1 className="special-head max-w-[600px] text-center font-oswald text-5xl sm:text-7xl">
-          Cafe Italia <span className="text-primary">Specials</span>
+        <h1 className="special-head mb-4 max-w-[600px] text-center font-montserrat text-5xl font-[700] italic tracking-[-1.08px] text-[#FFF4E3] md:mb-16 md:text-6xl">
+          Our <span className="text-primary">Specials</span>
         </h1>
-        <p className="special-description max-w-[500px] px-2 text-center font-light leading-[160%] text-[#C1B6A6] md:-ml-[50px] md:px-0">
-          We bring the finest cuts of beef to Cafe Italia with a commitment to
-          quality and sustainability. Embracing the city`s vibrant culinary
-          heritage, each dish reflects our dedication to responsible sourcing.
-          Experience dining that honors both our guests and the environment.
-        </p>
+
         {modelData && (
           <div className="relative z-20 flex min-h-[400px] w-full flex-col justify-center px-2">
             <EmblaCarousel slides={modelData} options={OPTIONS} />

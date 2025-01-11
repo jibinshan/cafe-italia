@@ -10,7 +10,9 @@ export default {
       fontFamily: {
         roboto: ["var(--font-roboto)", ...fontFamily.sans],
         oswald: ["var(--font-oswald)", ...fontFamily.sans],
-        playfair: ["var(--font-playfair)", ...fontFamily.sans],
+        manrope: ["var(--font-manrope)", ...fontFamily.sans],
+        inter: ["var(--font-inter)", ...fontFamily.sans],
+        montserrat: ["var(--font-montserrat)", ...fontFamily.sans],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -28,9 +30,21 @@ export default {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
         },
+        manrope: {
+          DEFAULT: "hsl(var(--manrope))",
+          foreground: "hsl(var(--manrope-foreground))",
+        },
+        inter: {
+          DEFAULT: "hsl(var(--inter))",
+          foreground: "hsl(var(--inter-foreground))",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+        },
+        montserrat: {
+          DEFAULT: "hsl(var(--montserrat))",
+          foreground: "hsl(var(--montserrat-foreground))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",

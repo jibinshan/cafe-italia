@@ -74,20 +74,14 @@ const Experience = ({}) => {
 
   return (
     <section className="relative flex h-full max-w-[1400px] flex-col items-center justify-center gap-7 bg-[#000000] px-7 py-10 lg:px-24 lg:py-20">
-      <div className="z-10 flex h-full w-full flex-col gap-5">
-        <h3 className="experience-title -ml-[50px] font-oswald uppercase">
+      <div className="z-10 flex h-full w-full flex-col items-center justify-center gap-5">
+        <h3 className="experience-title -ml-[50px] font-inter text-sm font-[600] uppercase tracking-[1.76px] text-[#FBEAD2]">
           we offer
         </h3>
-        <h1 className="head-experience font-oswald text-4xl font-bold sm:text-7xl md:text-start lg:leading-[80px]">
-          Unforgettable
-          <br />
-          Dining <span className="text-primary">Experience</span>
+        <h1 className="head-experience animate-slide-in text-center font-montserrat text-4xl font-[700] italic sm:text-7xl md:text-center lg:leading-[80px]">
+          Unforgettable <br /> Dining{" "}
+          <span className="text-primary">Experience</span>
         </h1>
-        <p className="experience-description mt-[10px] max-w-[500px] font-light leading-[160%] text-white md:text-start">
-          Enjoy an unforgettable dining experience where every dish is a
-          celebration of flavor and craftsmanship. From the ambiance to each
-          carefully curated plate, we strive to make every moment memorable.
-        </p>
       </div>
       <div className="hidden w-0 lg:flex lg:w-full lg:flex-col lg:gap-7">
         <div className="experience-container relative -ml-[50px] w-full rounded-3xl">
@@ -97,14 +91,14 @@ const Experience = ({}) => {
             width={1600}
             height={1066}
             alt="side-close-up"
-            className="h-[564px] w-full rounded-lg object-cover md:rounded-3xl"
+            className="h-[450px] w-[1300px] rounded-3xl object-cover md:rounded-none"
           />
 
           <div className="absolute bottom-7 left-3 z-20 flex flex-col gap-3 lg:bottom-28 lg:left-24 lg:gap-12">
-            <h1 className="font-oswald text-2xl font-extrabold lg:text-6xl">
+            <h1 className="font-montserrat text-2xl font-[700] italic tracking-[-1.8px] text-[#FFF4E3] lg:text-6xl">
               Food
             </h1>
-            <p className="max-w-[350px] text-xs lg:max-w-[500px] lg:text-lg">
+            <p className="max-w-[350px] font-roboto text-xs font-[400] tracking-[0.54px] text-[#FBEAD2] lg:max-w-[500px] lg:text-lg">
               Our food is a tribute to authentic flavors, crafted with the
               finest ingredients and a passion for tradition. Each dish is
               prepared with care, bringing a taste of rich culinary heritage to
@@ -120,13 +114,13 @@ const Experience = ({}) => {
             width={1600}
             height={1066}
             alt="side-close-up"
-            className="h-[550px] w-full rounded-3xl object-cover"
+            className="h-[450px] w-[1300px] rounded-3xl object-cover md:rounded-none"
           />
           <div className="absolute bottom-7 left-3 z-20 flex flex-col gap-3 lg:bottom-28 lg:left-24 lg:gap-12">
-            <h1 className="font-oswald text-2xl font-extrabold lg:text-6xl">
+            <h1 className="font-montserrat text-2xl font-[700] italic tracking-[-1.8px] text-[#FFF4E3] lg:text-6xl">
               Drinks
             </h1>
-            <p className="max-w-[350px] text-xs lg:max-w-[500px] lg:text-lg">
+            <p className="max-w-[350px] font-roboto text-xs font-[400] tracking-[0.54px] text-[#FBEAD2] lg:max-w-[500px] lg:text-lg">
               Discover a selection of expertly crafted drinks, designed to
               complement every meal with rich, refreshing flavors. From
               signature cocktails to fine wines, each sip enhances the dining
@@ -141,13 +135,13 @@ const Experience = ({}) => {
             width={3412}
             height={1934}
             alt="side-close-up"
-            className="h-[550px] w-[1300px] rounded-3xl object-cover"
+            className="h-[450px] w-[1300px] rounded-3xl object-cover md:rounded-none"
           />
           <div className="absolute bottom-7 left-3 z-20 flex flex-col gap-3 lg:bottom-28 lg:left-24 lg:gap-12">
-            <h1 className="font-oswald text-2xl font-extrabold lg:text-6xl">
+            <h1 className="font-montserrat text-2xl font-[700] italic tracking-[-1.8px] text-[#FFF4E3] lg:text-6xl">
               Atmosphere
             </h1>
-            <p className="max-w-[350px] text-xs lg:max-w-[500px] lg:text-lg">
+            <p className="max-w-[350px] font-roboto text-xs font-[400] tracking-[0.54px] text-[#FBEAD2] lg:max-w-[500px] lg:text-lg">
               Step into an atmosphere that blends warmth and elegance, designed
               to make every guest feel at home. With carefully curated decor and
               inviting lighting, our space sets the perfect backdrop for a
@@ -161,7 +155,7 @@ const Experience = ({}) => {
         <div className="experience-container relative -ml-[50px] w-full rounded-3xl">
           <div className="absolute left-0 top-0 z-10 h-full w-full bg-black/50"></div>
           <Image
-            src="/images/home/food2.jpeg"
+            src="/images/home/experience1.png"
             width={1600}
             height={1066}
             alt="side-close-up"
@@ -175,7 +169,7 @@ const Experience = ({}) => {
         <div className="experience-container relative -ml-[50px] w-full rounded-3xl">
           <div className="absolute left-0 top-0 z-10 h-full w-full bg-black/50"></div>
           <Image
-            src="/images/home/drinks2.jpeg"
+            src="/images/home/experience2.png"
             width={1600}
             height={1066}
             alt="side-close-up"
@@ -189,7 +183,7 @@ const Experience = ({}) => {
         <div className="experience-container relative -ml-[50px] w-full rounded-3xl">
           <div className="absolute left-0 top-0 z-10 h-full w-full bg-black/60"></div>
           <Image
-            src="/images/home/atmosphere2.jpg"
+            src="/images/home/experience3.png"
             width={3412}
             height={1934}
             alt="side-close-up"

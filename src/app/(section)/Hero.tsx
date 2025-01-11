@@ -15,7 +15,7 @@ const Hero = ({}) => {
       ease: "power4.out",
     })
       .from(".head-hero", 1, {
-        x: 160,
+        y: 160,
         opacity: 0,
         delay: -0.5,
       })
@@ -43,14 +43,15 @@ const Hero = ({}) => {
           ></video>
         </div>
         <div className="z-40 flex h-full w-full max-w-[1300px] items-center justify-center">
-          <div className="head-container flex w-fit flex-col items-center justify-center gap-7">
-            <h1 className="head-hero text-center font-oswald text-5xl font-semibold text-[#fff4e3] sm:text-5xl md:text-8xl lg:leading-[110px]">
+          <div className="head-container flex w-fit flex-col items-center justify-center gap-16">
+            <h1 className="head-hero text-center font-montserrat text-5xl font-[700] italic tracking-[-2.6px] text-[#FFF4E3] sm:text-5xl md:mr-10 md:text-8xl lg:leading-[110px]">
               Welcome To
               <br />
               Cafe Italia
             </h1>
+
             <Link href="/menu">
-              <Button className="hero-button flex items-center justify-center gap-3 rounded-none px-7 py-7">
+              <Button className="hero-button flex items-center justify-center gap-3 rounded-none px-7 py-7 font-inter text-sm font-[600] uppercase tracking-[1.76px]">
                 View Menu <MoveRight />
               </Button>
             </Link>

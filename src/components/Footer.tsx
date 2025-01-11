@@ -4,101 +4,87 @@ import Link from "next/link";
 
 const Footer = ({}) => {
   return (
-    <footer className="flex h-full w-full flex-col items-center justify-center gap-12 bg-[#131313] px-2 py-12">
-      <div className="flex w-full max-w-[1300px] flex-col items-center gap-4 md:flex-row">
-        <div className="hidden w-full flex-col items-center justify-center gap-4 md:flex md:w-1/3">
+    <footer className="flex h-full w-full flex-col items-center justify-center gap-12 bg-black px-2 py-12">
+      <div className="flex w-full max-w-[1300px] flex-col items-center gap-4 md:gap-12">
+        <div className="flex w-full flex-col items-center justify-center gap-12 md:mt-10 md:w-1/3">
+          <Image src="/images/logo.png" width={188} height={57} alt="logo" />
+        </div>
+
+        <div className="flex w-full flex-col items-center justify-center gap-4 md:w-1/3 md:flex-row md:gap-20">
           <Button
             variant="link"
-            className="w-fit items-center justify-start px-0 py-0 text-start text-xl text-[#959595] text-accent"
+            className="font-600 w-fit items-center justify-start px-0 py-0 text-start font-manrope text-sm uppercase tracking-[0.96px] text-[#ABABAB] text-accent"
             asChild
           >
-            <Link href="/menu">Menu</Link>
+            <Link href="/menu">Home</Link>
           </Button>
           <Button
             variant="link"
-            className="w-fit items-center justify-start px-0 py-0 text-start text-xl text-[#959595] text-accent"
+            className="font-600 w-fit items-center justify-start px-0 py-0 text-start font-manrope text-sm uppercase tracking-[0.96px] text-[#ABABAB] text-accent"
             asChild
           >
-            <Link href="/about-us">About</Link>
+            <Link href="/about-us">Menu</Link>
           </Button>
           <Button
             variant="link"
-            className="w-fit items-center justify-start px-0 py-0 text-start text-xl text-[#959595] text-accent"
+            className="font-600 w-fit items-center justify-start px-0 py-0 text-start font-manrope text-sm uppercase tracking-[0.96px] text-[#ABABAB] text-accent"
             asChild
           >
-            <Link href="/contact">Contact</Link>
+            <Link href="/contact">About</Link>
           </Button>
           <Button
             variant="link"
-            className="w-fit items-center justify-start px-0 py-0 text-start text-xl text-[#959595] text-accent"
+            className="font-600 w-fit items-center justify-start px-0 py-0 text-start font-manrope text-sm uppercase tracking-[0.96px] text-[#ABABAB] text-accent"
             asChild
           >
-            <Link href="/table-booking">Table booking</Link>
+            <Link href="/table-booking">Contact</Link>
           </Button>
         </div>
-        <div className="flex w-full flex-col items-center justify-center gap-12 md:w-1/3">
-          <Image
-            src="/images/footer-logo.png"
-            width={188}
-            height={57}
-            alt="logo"
-          />
-          <Link
-            href="https://maps.app.goo.gl/ZJMh1FpKoYa66F359"
-            target="_blank"
-            className="text-center"
-          >
-            37 Main Road, Windermere LA23 1DX England
-            <br />
-            Booking Request : 0161 795 5502
+        <div className="flex w-full flex-row items-center justify-center gap-4 md:w-1/3">
+          <Link href="/your-target-page" passHref>
+            <Image
+              src="/images/home/footer/insta.svg"
+              alt="insta"
+              width={41}
+              height={42}
+              className="cursor-pointer"
+            />
           </Link>
-          <Image src="/images/halal.png" width={90} height={90} alt="halal" />
-        </div>
-        <div className="flex w-full flex-col items-center justify-center gap-4 md:hidden md:w-1/3">
-          <Button
-            variant="link"
-            className="w-fit items-center justify-start px-0 py-0 text-start text-xl text-[#959595] text-accent"
-            asChild
-          >
-            <Link href="/menu">Menu</Link>
-          </Button>
-          <Button
-            variant="link"
-            className="w-fit items-center justify-start px-0 py-0 text-start text-xl text-[#959595] text-accent"
-            asChild
-          >
-            <Link href="/about-us">About</Link>
-          </Button>
-          <Button
-            variant="link"
-            className="w-fit items-center justify-start px-0 py-0 text-start text-xl text-[#959595] text-accent"
-            asChild
-          >
-            <Link href="/contact">Contact</Link>
-          </Button>
-          <Button
-            variant="link"
-            className="w-fit items-center justify-start px-0 py-0 text-start text-xl text-[#959595] text-accent"
-            asChild
-          >
-            <Link href="/table-booking">Table booking</Link>
-          </Button>
-        </div>
-        <div className="flex w-full flex-col items-center justify-center gap-4 md:w-1/3">
-          <div></div>
-          <p className="font-semibold uppercase text-[#959595]">
-            Opening hours
-          </p>
-          <p className="text-[##959595]">Everyday : From 12:30PM To 23:00PM</p>
-          <p className="text-[##959595]">Kitchen Closes At 22:00PM</p>
+          <Link href="/your-target-page" passHref>
+            <Image
+              src="/images/home/footer/site.svg"
+              alt="site"
+              width={33}
+              height={27}
+              className="cursor-pointer"
+            />
+          </Link>
+          <Link href="/your-target-page" passHref>
+            <Image
+              src="/images/home/footer/google.svg"
+              alt="google"
+              width={41}
+              height={42}
+              className="cursor-pointer"
+            />
+          </Link>
+          <Link href="/your-target-page" passHref>
+            <Image
+              src="/images/home/footer/fb.svg"
+              alt="fb"
+              width={42}
+              height={42}
+              className="cursor-pointer"
+            />
+          </Link>
         </div>
       </div>
-      <div className="flex w-full items-center justify-center">
-        <p className="w-fit px-4 text-center text-xl">
-          © 2024 Cafe Italia. All Rights Reserved |{" "}
+      <div className="mt-4 flex w-full items-center justify-center">
+        <p className="w-fit px-4 text-center font-manrope text-sm font-[400] tracking-[0.84px] text-[#64615C]">
+          © 2024 Istanbul Restaurant Manchester. All Rights Reserved |{" "}
           <Link
             href="https://foodo.ai"
-            className="text-primary hover:underline"
+            className="font-manrope text-sm font-[400] tracking-[0.84px] text-primary hover:underline"
           >
             Powered By Foodo
           </Link>

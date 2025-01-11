@@ -10,20 +10,25 @@ import PrivateAndGroupDining from "./(section)/PrivateAndGroupDining";
 import Reviews from "./(section)/Review";
 import Map from "./(section)/Map";
 import Contact from "./(section)/Contact";
+import HeaderTop from "./(section)/HeaderTop";
+import Explore from "./(section)/Explore";
+import Highlights from "./(section)/Highlights";
+import Follow from "./(section)/Follow";
 
 export default function HomePage() {
   return (
     <main className="relative flex h-full w-full overflow-hidden">
       <div className="flex h-full w-full flex-col items-center justify-center bg-[#000000]">
-        <Navbar position="fixed" />
+        <HeaderTop />
+        <Navbar position="absolute" />
         <Hero />
-        <Menu />
+        <Explore />
         <Experience />
         <Special />
+        <Highlights />
         <PrivateAndGroupDining />
         <Reviews />
-        <Glimpse />
-        <Map />
+        <Follow />
         <Contact />
         <Footer />
       </div>
