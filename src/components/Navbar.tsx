@@ -34,6 +34,7 @@ const Navbar = ({
       className={cn(
         `${position} top-5 z-50 flex h-[10vh] w-full flex-col items-center bg-transparent p-2 transition-all duration-0 ease-in-out md:top-8 md:p-2`,
         isScrolled && "bg-black",
+        pathname !== "/" && "md:top-0"
       )}
     >
       <div className="flex w-full flex-col items-center justify-center md:px-14">

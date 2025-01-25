@@ -32,7 +32,7 @@ export default function HomePage() {
         <Contact />
         <Footer />
       </div>
-      <div className="fixed bottom-2 right-2 z-50 hidden md:flex">
+      <div className="fixed bottom-2 right-2 z-50">
         <ViewMenu />
       </div>
     </main>

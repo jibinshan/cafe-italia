@@ -10,9 +10,9 @@ const ViewMenu = ({ }) => {
     >
       <Link href="/table-booking">
         <Icons.dining color="white" />
-        Table
+        Order
         <br />
-        Booking
+        Online
       </Link>
     </Button>
   );
