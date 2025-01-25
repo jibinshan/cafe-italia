@@ -15,7 +15,7 @@ const StripeWrapper: FC<{
   useEffect(() => {
     const fetchStripeObject = async () => {
       // If there is no accountId, do not run the loadStripe function.
-      if (restaurant?.paymentInfo.destinationAccountId) {
+      if (restaurant?.paymentInfo?.destinationAccountId) {
         const res = await loadStripe(stripePublishableKey, {
           stripeAccount: restaurant.paymentInfo.destinationAccountId,
         });
