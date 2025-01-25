@@ -16,32 +16,32 @@ const Footer = ({}) => {
             className="font-600 w-fit items-center justify-start px-0 py-0 text-start font-manrope text-sm uppercase tracking-[0.96px] text-[#ABABAB] text-accent"
             asChild
           >
-            <Link href="/menu">Home</Link>
+            <Link href="/">Home</Link>
           </Button>
           <Button
             variant="link"
             className="font-600 w-fit items-center justify-start px-0 py-0 text-start font-manrope text-sm uppercase tracking-[0.96px] text-[#ABABAB] text-accent"
             asChild
           >
-            <Link href="/about-us">Menu</Link>
+            <Link href="/menu">Online Order</Link>
           </Button>
           <Button
             variant="link"
             className="font-600 w-fit items-center justify-start px-0 py-0 text-start font-manrope text-sm uppercase tracking-[0.96px] text-[#ABABAB] text-accent"
             asChild
           >
-            <Link href="/contact">About</Link>
+            <Link href="/about-us">About</Link>
           </Button>
           <Button
             variant="link"
             className="font-600 w-fit items-center justify-start px-0 py-0 text-start font-manrope text-sm uppercase tracking-[0.96px] text-[#ABABAB] text-accent"
             asChild
           >
-            <Link href="/table-booking">Contact</Link>
+            <Link href="/table-booking">Book Your Table</Link>
           </Button>
         </div>
         <div className="flex w-full flex-row items-center justify-center gap-4 md:w-1/3">
-          <Link href="/your-target-page" passHref>
+          <Link href="https://www.facebook.com/p/Cafe-Italia-100057087235270/" passHref>
             <Image
               src="/images/home/footer/insta.svg"
               alt="insta"
@@ -50,7 +50,7 @@ const Footer = ({}) => {
               className="cursor-pointer"
             />
           </Link>
-          <Link href="/your-target-page" passHref>
+          <Link href="https://www.tripadvisor.com/Restaurant_Review-g186330-d2650482-Reviews-Cafe_Italia-Windermere_Lake_District_Cumbria_England.html" passHref>
             <Image
               src="/images/home/footer/site.svg"
               alt="site"
@@ -59,7 +59,7 @@ const Footer = ({}) => {
               className="cursor-pointer"
             />
           </Link>
-          <Link href="/your-target-page" passHref>
+          <Link href="https://g.co/kgs/GZYTpCx" passHref>
             <Image
               src="/images/home/footer/google.svg"
               alt="google"
@@ -68,7 +68,7 @@ const Footer = ({}) => {
               className="cursor-pointer"
             />
           </Link>
-          <Link href="/your-target-page" passHref>
+          <Link href="https://www.facebook.com/p/Cafe-Italia-100057087235270/" passHref>
             <Image
               src="/images/home/footer/fb.svg"
               alt="fb"
@@ -81,7 +81,7 @@ const Footer = ({}) => {
       </div>
       <div className="mt-4 flex w-full items-center justify-center">
         <p className="w-fit px-4 text-center font-manrope text-sm font-[400] tracking-[0.84px] text-[#64615C]">
-          © 2024 Istanbul Restaurant Manchester. All Rights Reserved |{" "}
+          © 2025 Cafe Italia Windermere. All Rights Reserved |{" "}
           <Link
             href="https://foodo.ai"
             className="font-manrope text-sm font-[400] tracking-[0.84px] text-primary hover:underline"
